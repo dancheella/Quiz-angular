@@ -17,7 +17,7 @@ export class AuthInterceptor implements HttpInterceptor {
     const tokens = this.authService.getTokens();
     if (tokens.accessToken) {
       const authReq = req.clone({
-        headers: req.headers.set('x-access-token', tokens.accessToken);
+        headers: req.headers.set('x-access-token', tokens.accessToken)
       })
       return next.handle(authReq)
         .pipe(
@@ -50,7 +50,7 @@ export class AuthInterceptor implements HttpInterceptor {
         catchError(err => {
           this.authService.removeTokens();
           this.authService.removeUserInfo();
-          this.router.navigate(['/'])
+          this.router.navigate(['/']);
           return throwError(() => err);
         })
       )
