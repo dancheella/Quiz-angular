@@ -95,7 +95,6 @@ export class TestComponent implements OnInit {
         return;
       }
 
-
       this.currentQuestionIndex++;
     } else {
       this.currentQuestionIndex--;

@@ -1,1 +1,15 @@
-<p>result works!</p>
+<div class="result">
+  <div class="container">
+    <div class="result-image">
+      <img src="assets/images/question-marks.png" alt="Question">
+    </div>
+    <div class="result-title big-title">
+      Ура! Ты прошёл тест! <span>Твой результат:</span>
+    </div>
+    <div class="result-score" id="result-score">{{result}}</div>
+    <div class="common-page result-page">
+      <a href="javascript:void(0)" id="results" (click)="allAnswers()">Посмотреть правильные ответы <img src="assets/images/small-arrow.png"
+                                                                                  alt="Arrow"></a>
+    </div>
+  </div>
+</div>
