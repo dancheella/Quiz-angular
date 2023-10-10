@@ -114,23 +114,27 @@ a {
   }
 }
 
-.common-question-option {
-  font-size: 20px;
-  line-height: 24px;
-  margin-bottom: 20px;
-  display: flex;
+.common-question-options {
+  margin-bottom: 60px;
 
-  .option-answer {
-    appearance: none;
-    -webkit-appearance: none;
-    width: 20px;
-    height: 20px;
-    border: 3px solid #6933DC;
-    border-radius: 50%;
-    margin: 0 13px 0 0;
-    transform: translateY(2px);
-    display: grid;
-    place-content: center;
-    min-width: 20px;
+  .common-question-option {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    display: flex;
+
+    .option-answer {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 20px;
+      height: 20px;
+      border: 3px solid #6933DC;
+      border-radius: 50%;
+      margin: 0 13px 0 0;
+      transform: translateY(2px);
+      display: grid;
+      place-content: center;
+      min-width: 20px;
+    }
   }
 }

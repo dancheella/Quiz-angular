@@ -12,7 +12,7 @@
       <div class="common-question-title" id="question-title">
         <span>Вопрос {{currentQuestionIndex}}:</span> {{activeQuestion.question}}
       </div>
-      <div class="test-question-options" id="options">
+      <div class="test-question-options common-question-options" id="options">
         <div class="common-question-option" *ngFor="let answer of activeQuestion.answers">
           <input class="option-answer" id="{{answer.id}}" [(ngModel)]="chosenAnswerId" type="radio" name="answer"
                  [value]="answer.id">

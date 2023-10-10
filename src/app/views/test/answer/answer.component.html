@@ -1,1 +1,27 @@
-<p>answer works!</p>
+<div class="answer" *ngIf="quiz">
+  <div class="container">
+    <div class="common-pre-title answers-pre-title">Результат прохождения теста<img
+      src="assets/images/small-arrow-grey.png" alt="Стрелка"><span
+      id="pre-title">{{quiz.test.name}}</span></div>
+    <h1 class="answers-title"><span>Правильные ответы </span> к тесту</h1>
+    <div class="answer-info">Тест выполнил <span id="answer-info">{{answerInfo}}</span></div>
+    <div class="common-question-options" *ngFor="let question of quiz.test.questions; let i = index">
+      <div class="common-question-title answer-question-title">
+        <span>Вопрос {{i+1}}:</span> {{question.question}}
+      </div>
+      <div class="common-question-option" *ngFor="let answer of question.answers">
+        <input class="option-answer" id="{{answer.id}}" type="radio" name="answer" value="{{answer.id}}"
+               [class.correct] = "answer.correct === true"
+               [class.incorrect] = "answer.correct === false">
+        <label for="{{answer.id}}"
+               [class.answer-correct] = "answer.correct === true"
+               [class.answer-incorrect] = "answer.correct === false">{{answer.answer}}</label>
+      </div>
+    </div>
+    <div class="common-page" >
+      <a href="javascript:void(0)" id="results" (click)="history()">Обратно к моему результату теста
+        <img src="assets/images/small-arrow.png" alt="Arrow">
+      </a>
+    </div>
+  </div>
+</div>
