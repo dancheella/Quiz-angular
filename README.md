@@ -1,27 +1,20 @@
 # QuizAngular
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
 
-## Development server
+## Launching the project
+1. Download the "backend" folder using the link: https://drive.google.com/drive/folders/1W04x1JMmT_p-yCU93gzVXQOw-RQP3Oty?usp=sharing
+2. Open the folder in any IDE.
+3. Use the following command in the terminal: 
+```sh
+npm install
+npm run start
+```
+4. Open deploy by link: https://dancheella.github.io/Quiz-angular/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Result of the work:
+![main](https://i.imgur.com/SQvqsm3.png)
+![form](https://i.imgur.com/TO1KOGk.png)
+![choice](https://i.imgur.com/HryyGzv.png)
+![test](https://i.imgur.com/1uFZLNJ.png)
+![result](https://i.imgur.com/67GPRd0.png)
+![answer](https://i.imgur.com/t4fpN0W.png)
