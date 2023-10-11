@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: "Museo Sans Cyrl 500", sans-serif;
+  color: #333333;
+}
+
+a {
+  color: #6933DC;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .common-pre-title {
+    font-size: 20px;
+    line-height: 24px;
+    color: #DCDCF3;
+  }
+
+  .common-page {
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+      font-size: 17px;
+      line-height: 20px;
+      color: #6933DC;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      img {
+        margin-left: 13px;
+      }
+    }
+  }
+}
+
+.button {
+  padding: 14px 35px;
+  background: #6933DC;
+  border-radius: 6px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FFFFFF;
+  border: 0;
+  transition: .4s;
+  cursor: pointer;
+  text-decoration: none;
+
+  &a {
+    display: inline-block;
+  }
+
+  &:hover {
+    background: #32098a;
+  }
+
+  &:disabled {
+    background-color: #e2dfe7;
+    cursor: not-allowed;
+  }
+
+  &.button-transparent {
+    background: transparent;
+    color: #6933DC;
+    border: 1px solid #6933DC;
+
+    &:hover {
+      background: #6933DC;
+      color: white;
+    }
+
+    &:disabled {
+      background: transparent;
+      color: #e2dfe7;
+      border: 1px solid #e2dfe7;
+    }
+  }
+}
+
+.big-title {
+  font-family: 'Museo Sans Cyrl Bold', sans-serif;
+  font-size: 54px;
+  line-height: 65px;
+
+  span {
+    color: #6933DC;
+  }
+}
+
+.common-title {
+  font-family: 'Museo Sans Cyrl Bold', sans-serif;
+  font-size: 48px;
+  line-height: 58px;
+
+  span {
+    color: #6933DC;
+  }
+}
+
+.common-question-title {
+  font-family: 'Museo Sans Cyrl Bold', sans-serif;
+  font-size: 36px;
+  line-height: 43px;
+
+  span {
+    color: #6933DC;
+  }
+}
+
+.common-question-options {
+  margin-bottom: 60px;
+
+  .common-question-option {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    display: flex;
+
+    .option-answer {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 20px;
+      height: 20px;
+      border: 3px solid #6933DC;
+      border-radius: 50%;
+      margin: 0 13px 0 0;
+      transform: translateY(2px);
+      display: grid;
+      place-content: center;
+      min-width: 20px;
+    }
+  }
+}

@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "build-angular": "ng build --output-path docs --base-href /Quiz-angular/",
     "test": "ng test"
   },
   "private": true,
